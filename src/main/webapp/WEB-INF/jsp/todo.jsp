@@ -8,15 +8,16 @@
 
 <body>
 <div class="container">
-    Pagina pentur adaugarea utilitatilor pentru ${name}
+
     <form:form method="post" modelAttribute="todo">
         <fieldset class="form-group">
             <form:label path="desc">Descriere</form:label>
-            <form:input path="desc" type="text" class="form-control" required="required"/>
-
+            <form:input path="desc" type="text"
+                        class="form-control" required="required"/>
+            <form:errors path="desc" cssClass="text-warning"/>
         </fieldset>
 
-        <button type="submit" class="btn-success"> Adauga</button>
+        <button type="submit" class="btn btn-success">Adaugare</button>
     </form:form>
 </div>
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>

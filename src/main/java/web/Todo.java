@@ -1,11 +1,14 @@
 package web;
 
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.Objects;
 
 public class Todo {
     private int id;
     private String user;
+
+    @Size (min=10, message="Inserati minimum 10 caractere...")
     private String desc;
     private Date targetDate;
     private boolean isDone;

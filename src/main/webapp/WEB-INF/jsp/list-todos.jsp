@@ -16,6 +16,8 @@
         <th>Descriere</th>
         <th>Data finala</th>
         <th>Este finalizata?</th>
+        <th></th>
+
     </tr>
     </thead>
     <tbody>
@@ -26,6 +28,7 @@
     <td>${todo.desc}</td>
     <td>${todo.targetDate}</td>
     <td>${todo.done}</td>
+
     <td><a type="button" class="btn btn-warning" href="/delete-todo?id=${todo.id}"> Sterge </a> </td>
 </tr>
 </c:forEach>
@@ -36,6 +39,7 @@
 
 <BR/>
 <div><a class="button" href="/add-todo"> Adauga o utilitate</a></div>
+
 <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
 <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </div>
