@@ -17,6 +17,7 @@
         <th>Data finala</th>
         <th>Este finalizata?</th>
         <th></th>
+        <th></th>
 
     </tr>
     </thead>
@@ -28,7 +29,7 @@
     <td>${todo.desc}</td>
     <td>${todo.targetDate}</td>
     <td>${todo.done}</td>
-
+    <td><a type="button" class="btn btn-success" href="/update-todo?id=${todo.id}">Actualizare</a></td>
     <td><a type="button" class="btn btn-warning" href="/delete-todo?id=${todo.id}"> Sterge </a> </td>
 </tr>
 </c:forEach>
